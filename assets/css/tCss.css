@@ -3,3 +3,12 @@
 * @autor tonway
 * @time 2015-11-22
 */
+body,section,article,aside,header,footer,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0;
+}
+@media (min-width: 1024px) {
+    body{
+        background:#ff6600;
+    }
+}
