@@ -3,12 +3,39 @@
 * @autor tonway
 * @time 2015-11-22
 */
-body,section,article,aside,header,footer,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p{
+body,section,article,aside,header,footer,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,summary{
     margin:0;
     padding:0;
 }
-@media (min-width: 1024px) {
-    body{
-        background:#ff6600;
-    }
+ul,ol,li{
+    list-style:none;
+}
+/**
+* 头部相关
+*/
+header{}
+.logo{}
+nav{}
+/**
+** 页脚相关
+*/
+footer{
+
+}
+
+
+/**
+*  ipad,ipad mini级以上的设备
+*/
+@media (min-width: 768px) {
+
+
+
+
+}
+/**
+* iphone5s屏幕尺寸及以下
+*/
+@media (max-width: 640px) {
+
 }
