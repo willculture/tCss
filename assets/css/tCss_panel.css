@@ -1,0 +1,165 @@
+/**
+* 面板
+* pl panel
+* hd head
+* bd body
+* ft foot
+* /////////// pl-hd
+* pl-hd-title 标题
+* pl-hd-msg 有通知或消息可以使用
+* pl-hd-tool 工具操作,比如关闭,刷新等等操作按钮都可以放这里
+*/
+.pl{
+
+}
+.pl .right{
+    float: right;
+}
+.pl .left{
+    float: left;
+}
+.pl-hd{
+    display: block;
+    height: 35px;
+    position: relative;
+    border-bottom: #58BC5A 1px solid;
+}
+.pl-hd:after{
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+}
+.pl-hd-title{
+    display: inline-block;
+    font-size:1.5em;
+    margin-right: 10px;
+}
+
+.pl-hd-msg{
+    display: table;
+    height: 100%;
+}
+.pl-hd-msg a{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+.pl-hd-msg a:hover{
+    color: #eee;
+}
+.pl-hd-msg a strong{
+    display: inline-block;
+    border-radius: 10px;
+    background: #58BC5A;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+.pl-hd-tool{
+    display: table;
+    padding: 0 6px;
+    height: 100%;
+}
+.pl-hd-tool a {
+    font-size: 12px;
+    display: table-cell;
+    padding: .3125em;
+    height: 100%;
+    vertical-align: middle;
+}
+.pl-hd-tool a i{
+    font-size: 14px;
+}
+.pl-hd-tab{
+    display: flex;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+.pl-hd-tab:after{
+    display: block;
+    clear: both;
+    content: " ";
+    height: 0;
+}
+.pl-hd-tab a{
+    float: left;
+    display: block;
+    padding:10px;
+}
+.pl-hd-tab a.active,.pl-hd-tab a:hover{
+    background: #58BC5A;
+    color: #fff;
+}
+
+.pl-bd{
+    padding-top: 10px;
+  padding-bottom: 10px;
+}
+.pl-ft{
+
+}
+
+/**
+*  第一种样式
+*/
+.pl-default{
+    border: #58BC5A 1px solid;
+    border-radius: 2px;
+}
+.pl-default .pl-hd-title{
+    color: white;
+}
+.pl-default .pl-hd{
+    background-color: #58BC5A;
+}
+.pl-default .pl-hd a:hover{
+    color: #fff;
+}
+.pl-default .pl-hd-title{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pl-default .pl-hd-msg a{
+    color:#58BC5A ;
+}
+.pl-default .pl-hd-msg a:hover{
+    color: #eee;
+}
+.pl-default .pl-hd-msg strong{
+    background-color: #fff;
+}
+.pl-default .pl-hd-tab a.active,.pl-default .pl-hd-tab a:hover{
+    background-color: #fff;
+    color: #58BC5A;
+}
+.pl-default .pl-bd{
+    padding: 10px;
+}
+.pl-default .pl-ft{
+    background-color: #58BC5A;
+    padding: 10px;
+}
+
+/**
+* 第二种样式
+*/
+.pl-light{
+  border: #eaeef1 1px solid;
+    border-radius: 2px;
+}
+.pl-light .pl-hd{
+    background-color: #eaeef1;
+}
+.pl-light .pl-hd-title{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pl-light .pl-bd{
+    padding: 10px;
+}
+.pl-light .pl-ft{
+    background-color: #eaeef1;
+    padding: 10px;
+}

@@ -1,0 +1,65 @@
+/***
+* 这里是List
+纵向列表
+*/
+.lt:after{
+    clear:both;
+    display: block;
+    content: " ";
+    height: 0;
+}
+.lt .lt-it-title{
+    line-height: 18px;
+}
+.lt .lt-it-tool{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.lt .lt-it-tool a{
+    display: inline-block;
+    padding: 5px;
+    border: 1px #eee solid;
+}
+.lt strong{
+    font-size: 18px;
+    color: #e4393c;
+}
+.lt strong em{
+    font-style: normal;
+}
+/*文本列表*/
+.lt-txt{
+
+}
+.lt-txt .lt-it{
+    line-height: 25px;
+    font-size: 14px;
+}
+.lt-txt .lt-it .lt-it-title{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.lt-txt .lt-it time{
+    font-size: 12px;
+    color: #bbb;
+    float: right;
+}
+/**
+* 横向列表
+*/
+.lt-inline{
+
+}
+.lt-inline .lt-it{
+   float: left;
+    padding: 5px;
+}
+
+/*图文列表*/
+.list-image-text{
+
+}
