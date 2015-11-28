@@ -69,7 +69,7 @@ footer{
 .col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{
     min-height: 200px;
     float: left;
-    padding:0 .3125em;
+    padding:0 15px;
 }
 .col-6{
     width: 49.9999%;

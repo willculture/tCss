@@ -1,12 +1,29 @@
 /***
 * 这里是List
 纵向列表
+* lt list
+* lt-it list-item
+* lt-it-title 每项的标题
+* lt-it-cover 每项的封面
+* lt-it-tool 每项的工具按钮栏
+* lt-it-point 重点突出信息
+* .lt strong 强调信息
+* .lt strong em 强调信息中的特殊信息
+* .lt strong.not 不需要强调的,删除的
+* .lt .extra 扩展额外信息
 */
 .lt:after{
     clear:both;
     display: block;
     content: " ";
     height: 0;
+}
+.lt .lt-it-cover{
+    display: block;
+}
+.lt .lt-it-cover img{
+    min-width: 100%;
+    max-width: 100%;
 }
 .lt .lt-it-title{
     line-height: 18px;
@@ -26,9 +43,19 @@
 .lt strong{
     font-size: 18px;
     color: #e4393c;
+    margin-right: 5px;
 }
 .lt strong em{
     font-style: normal;
+}
+.lt strong.not{
+    font-size: 14px;
+    color: #666666;
+    text-decoration: line-through;
+}
+.lt .extra{
+    font-size: 12px;
+    color: #bbbbbb;
 }
 /*文本列表*/
 .lt-txt{
@@ -55,11 +82,32 @@
 
 }
 .lt-inline .lt-it{
-   float: left;
+    float: left;
     padding: 5px;
 }
 
 /*图文列表*/
-.list-image-text{
+.lt-img-txt{
 
+}
+.lt-img-txt .lt-it:hover{
+    border: #bbbbbb 1px solid;
+}
+
+.lt-img-txt-block{
+
+}
+.lt-img-txt-block .lt-it{
+
+    padding: 10px;
+}
+.lt-img-txt-block .lt-it .lt-it-cover{
+    float: left;
+    padding-right: 10px;
+}
+.lt-img-txt-block .lt-it:after{
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
 }
