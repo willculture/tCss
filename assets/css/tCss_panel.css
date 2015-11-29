@@ -31,9 +31,12 @@
     height: 0;
 }
 .pl-hd-title{
-    display: inline-block;
+    display: inline-flex;
     font-size:18px;
     margin-right: 10px;
+   align-items: center;
+    margin: 0;
+    height: 100%;
 }
 
 .pl-hd-msg{

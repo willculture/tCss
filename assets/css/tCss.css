@@ -109,11 +109,8 @@ footer{
     display: table;
     content: " ";
 }
-.col-4:nth-child(2n),.col-3:nth-child(2n),.col-2:nth-child(2n),.col-1:nth-child(2n){
 
-}
 .col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{
-    min-height: 200px;
     float: left;
     padding:0 15px;
 }
