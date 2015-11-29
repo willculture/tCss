@@ -1,0 +1,169 @@
+/*表单
+ fm  form 表单
+ fm-it form-item 表单项
+ fm-input form-input  输入框
+ fm-tips form-tips  消息提示
+*/
+button{
+    border: none;
+}
+input[type=text]{
+    color: #666666;
+    font-size: 14px;
+    padding: 6px 12px;
+    border:1px solid rgb(203, 213, 221);
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+input[type=text]:disabled{
+    background: #ccc;
+    cursor: not-allowed;
+}
+input[type=file]{
+
+}
+select{
+    border: #58BC5A 1px solid;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin: 0;
+    color:#888;
+    outline:none;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.checkbox,.radio{
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+}
+.checkbox input[type="checkbox"],.radio input[type="radio"]{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+
+.checkbox i,.radio i{
+    font-style: normal;
+}
+.checkbox i::before,.radio i::before{
+    font-family: "FontAwesome";
+    font-style: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 18px;
+}
+.checkbox input[type="checkbox"] + i::before,.checkbox input[type="radio"] + i::before{
+    content: "\f096";
+
+}
+.checkbox input[type="checkbox"]:checked + i::before,.checkbox input[type="radio"]:checked + i::before{
+    content: "\f046";
+    color: #58BC5A;
+}
+
+.radio input[type="radio"] + i::before{
+    content: "\f10c";
+
+}
+.radio input[type="radio"]:checked + i::before{
+    content: "\f192";
+    color: #58BC5A;
+}
+.file{
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+    border: #58BC5A 1px solid;
+}
+.file input{
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+.file-input{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100%;
+}
+.file-input:hover i{
+    background: #eee;
+}
+.file input[type=file]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.file i{
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "选择文件";
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    font-style: normal;
+    border-left: #58BC5A 1px solid;
+    line-height: 35px;
+}
+
+.fm{
+
+}
+.fm-it{
+    margin-bottom: 15px;
+}
+.fm-it label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.fm-input{
+   display: block;
+    width: 100%;
+}
+.fm-tips{
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.fm-tips.success{
+    border:1px #3c763d solid;
+    color: #3c763d;
+}
+.fm-tips.warm{
+    border:1px #8a6d3b solid;
+    color: #8a6d3b;
+}
+.fm-tips.error{
+    border:1px  #a94442 solid;
+    color: #a94442;
+}
+
+/*额外的表单组件*/
+.fm-gp{
+    display: table;
+    border: #58BC5A 1px solid;
+    border-radius: 3px;
+}
+.fm-gp input{
+    border: none;
+}
+.fm-gp-addon{
+    padding: 5px;
+    display: table-cell;
+    background: #eeeeee;
+}

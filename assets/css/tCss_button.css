@@ -1,0 +1,53 @@
+/*按钮
+* 按钮里包含了bule,green,yellow,red,dark这几种样式
+* btn button 圆角像素4个像素,默认的按钮
+* btn-around button-around 这里是按钮圆角为50个像素
+*/
+.btn,.btn-around{
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid #58BC5A;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    color: #788288;
+    background-color: #fcfcfd;
+    outline: 0;
+}
+.btn:focus,.btn:hover,.btn-around:focus,.btn-around:hover{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.20);
+}
+.btn-around{
+    border-radius:50px;
+}
+.btn-blue,.btn-green,.btn-yellow,.btn-red,.btn-dark{
+    color: #fff;
+}
+.btn-blue{
+    background-color: #177bbb;
+    border-color: #177bbb;
+}
+.btn-green{
+    background-color: #1aae88;
+    border-color: #1aae88;
+}
+.btn-red{
+    background-color: #e33244;
+    border-color: #e33244;
+}
+.btn-yellow{
+    background-color: #fcc633;
+    border-color: #fcc633;
+}
+.btn-dark{
+    background-color: #222733;
+    border-color: #222733;
+}

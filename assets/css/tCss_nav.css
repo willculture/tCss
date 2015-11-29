@@ -1,3 +1,36 @@
 /*
 * 网站导航
+* nav-item 导航每项
+* nav-extend 导航扩展项 子节点须为 a 标签
 */
+.nav{
+  border-bottom: #58BC5A 1px solid;
+}
+.nav:after{
+    clear: both;
+    display: block;
+    content: " ";
+    height: 0;
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+}
+.nav-item a.active{
+    border-bottom: 2px solid #58BC5A;
+}
+
+.nav-extend{
+    display: flex;
+    align-content: center;
+    float: right;
+}
+.nav-extend a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+}
