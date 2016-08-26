@@ -40,8 +40,8 @@ h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .sm
     color: #777;
 }
 h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
     font-size: 65%;
@@ -96,7 +96,15 @@ nav{}
 footer{
 
 }
-
+.mt-small{
+	margin-top: 5px;
+}
+.mt-middle {
+	margin-top: 20px;
+}
+.mt-big {
+	margin-top:  50px;
+}
 /***
 * 布局
 *
@@ -104,15 +112,17 @@ footer{
 .row{
     margin:10px 0;
 }
-.row:after{
+.row::after{
     clear: both;
-    display: table;
+    display: block;
     content: " ";
+    width: 0;
+    height: 0;
 }
 
 .col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{
     float: left;
-    padding:0 15px;
+    padding:0 15px; 
 }
 .col-6{
     width: 49.9999%;
@@ -153,7 +163,30 @@ footer{
 .col-2 {
     width: 16.66666667%;
 }
-
+/**
+* 基本配置
+*/
+.fixed {
+	position: fixed;
+}
+.line {
+	height: 1px;
+	background-color: #eee;
+	width: 100%;
+	display: block; 
+	text-align: center;
+}
+.line::AFTER {
+	position: relative;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	content: " ";
+	border: #eee 1px solid;
+	top: -10px;
+	background-color: #fff;
+}
 /**
 *  ipad,ipad mini级以上的设备
 */
@@ -164,8 +197,8 @@ footer{
 * iphone5s屏幕尺寸及以下
 */
 @media (max-width: 640px) {
-
-
+   .col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1 {
+      width: 100%;
+   }
 }
-
 
