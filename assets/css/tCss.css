@@ -84,7 +84,12 @@ a:hover{
 img{
     max-width: 100%;
 }
-.img100-circle {
+.img6-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+}
+.img10-circle {
 	width: 100px;
 	height: 100px;
 	border-radius: 100px;
