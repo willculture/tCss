@@ -84,6 +84,11 @@ a:hover{
 img{
     max-width: 100%;
 }
+.img100-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
 /**
 * 头部相关
 */
