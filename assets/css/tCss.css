@@ -26,142 +26,204 @@ ul,ol,li{
 h1,h2,h3,h4,h5,h6{
     color: #000;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
 
-h1, h2, h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small,
+	.h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small,
+	h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small,
+	.h4 .small, .h5 .small, .h6 .small {
+	font-weight: normal;
+	line-height: 1;
+	color: #777;
 }
-h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,
-h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small {
-    font-weight: normal;
-    line-height: 1;
-    color: #777;
-}
+
 h1, .h1, h2, .h2, h3, .h3 {
-    padding-top: 20px;
-    padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
-h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
-    font-size: 65%;
+
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small,
+	.h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
+	font-size: 65%;
 }
+
 h4, .h4, h5, .h5, h6, .h6 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .small, h5 .small, .h5 .small, h6 .small, .h6 .small {
-    font-size: 75%;
+
+h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small,
+	.h4 .small, h5 .small, .h5 .small, h6 .small, .h6 .small {
+	font-size: 75%;
 }
+
 h1, .h1 {
-    font-size: 36px;
+	font-size: 36px;
 }
+
 h2, .h2 {
-    font-size: 30px;
+	font-size: 30px;
 }
+
 h3, .h3 {
-    font-size: 24px;
+	font-size: 24px;
 }
+
 h4, .h4 {
-    font-size: 18px;
+	font-size: 18px;
 }
+
 h5, .h5 {
-    font-size: 14px;
+	font-size: 14px;
 }
+
 h6, .h6 {
-    font-size: 12px;
+	font-size: 12px;
 }
+
 p {
-    margin: 0 0 10px;
+	margin: 0 0 10px;
 }
-a{
-    color: #333;
-    text-decoration: none;
+
+a {
+	color: #333;
+	text-decoration: none;
 }
-a:hover{
-    color: #58BC5A;
+
+a:hover {
+	color: #58BC5A;
 }
-img{
-    max-width: 100%;
+
+img {
+	max-width: 100%;
+}
+
+.img5-circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+
+.img6-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+}
+
+.img10-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
 }
 /**
 * 头部相关
 */
-header{}
-.logo{}
-nav{}
+header {
+	
+}
+
+.logo {
+	
+}
+
+nav {
+	
+}
 /**
 ** 页脚相关
 */
-footer{
-
+footer {
+	
 }
-.mt-small{
+
+.mt-small {
 	margin-top: 5px;
 }
+
 .mt-middle {
 	margin-top: 20px;
 }
+
 .mt-big {
-	margin-top:  50px;
+	margin-top: 50px;
 }
 /***
 * 布局
 *
 */
-.row{
-    margin:10px 0;
-}
-.row::after{
-    clear: both;
-    display: block;
-    content: " ";
-    width: 0;
-    height: 0;
+.row {
+	margin: 10px 0;
 }
 
-.col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{
-    float: left;
-    padding:0 15px; 
+.row::after {
+	clear: both;
+	display: block;
+	content: " ";
+	width: 0;
+	height: 0;
 }
-.col-6{
-    width: 49.9999%;
+
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5,
+	.col-4, .col-3, .col-2, .col-1 {
+	float: left;
+	padding: 0 15px;
 }
-.col-12{
-    width: 100%;
-}
-.col-11{
-    width:91.66666667%;
-}
-.col-1{
-    width: 8.333%;
-}
-.col-10 {
-    width: 83.33333333%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-8 {
-    width: 66.66666667%;
-}
-.col-7 {
-    width: 58.33333333%;
-}
+
 .col-6 {
-    width: 50%;
+	width: 49.9999%;
 }
+
+.col-12 {
+	width: 100%;
+}
+
+.col-11 {
+	width: 91.66666667%;
+}
+
+.col-1 {
+	width: 8.333%;
+}
+
+.col-10 {
+	width: 83.33333333%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-8 {
+	width: 66.66666667%;
+}
+
+.col-7 {
+	width: 58.33333333%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
 .col-5 {
-    width: 41.66666667%;
+	width: 41.66666667%;
 }
+
 .col-4 {
-    width: 33.33333333%;
+	width: 33.33333333%;
 }
+
 .col-3 {
-    width: 25%;
+	width: 25%;
 }
+
 .col-2 {
-    width: 16.66666667%;
+	width: 16.66666667%;
 }
 /**
 * 基本配置
@@ -169,13 +231,15 @@ footer{
 .fixed {
 	position: fixed;
 }
+
 .line {
 	height: 1px;
 	background-color: #eee;
 	width: 100%;
-	display: block; 
+	display: block;
 	text-align: center;
 }
+
 .line::AFTER {
 	position: relative;
 	display: inline-block;
@@ -190,15 +254,14 @@ footer{
 /**
 *  ipad,ipad mini级以上的设备
 */
-@media (min-width: 768px) {
-
+@media ( min-width : 768px) {
 }
 /**
 * iphone5s屏幕尺寸及以下
 */
-@media (max-width: 640px) {
-   .col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1 {
-      width: 100%;
-   }
+@media ( max-width : 640px) {
+	.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5,
+		.col-4, .col-3, .col-2, .col-1 {
+		width: 100%;
+	}
 }
-
