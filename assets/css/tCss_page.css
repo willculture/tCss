@@ -1,3 +1,10 @@
+/**
+* 分页样式代码
+* pg - page
+* pg-it - page-item
+* @author will
+* @date 2016-09-09
+*/
 .pg {
 	display: inline-table;
 }
