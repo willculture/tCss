@@ -44,4 +44,6 @@
 	color: #fff;
 	background-color: #58BC5A;
 	cursor: default;
+	border-top-color: #58BC5A;
+	border-bottom-color: #58BC5A;
 }
