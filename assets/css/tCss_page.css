@@ -1,0 +1,38 @@
+.pg {
+	display: inline-table;
+}
+
+.pg .pg-it {
+	display: table-cell;
+	padding: 8px 15px;
+	border: #eee 1px solid;
+	border-right: none;
+}
+
+.pg .pg-it:hover {
+	background-color: #666;
+	color: #fff;
+}
+
+.pg .pg-it:last-child {
+	border-right: #eee 1px solid;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.pg .pg-it:first-child {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.pg .disable, .pg .disable:hover {
+	color: #d3d3d3;
+	cursor: default;
+	background-color: #fafafa;
+}
+
+.pg .active, .pg .active:hover {
+	color: #fff;
+	background-color: #58BC5A;
+	cursor: default;
+}
