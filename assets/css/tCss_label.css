@@ -1,0 +1,12 @@
+/**
+* label 可以用在文字标签, 或者消息上
+* @author will
+* @date 2016-09-11
+*/
+.label {
+	display: inline-block;
+	padding: .2em .6em .3em;
+	background-color: #ebeef5;
+	color: #717171;
+	border-radius: .25em;
+}
