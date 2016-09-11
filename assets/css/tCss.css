@@ -4,28 +4,35 @@
 * @autor tonway
 * @time 2015-11-22
 */
-body,section,article,aside,header,footer,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,summary{
-    margin:0;
-    padding:0;
+body, section, article, aside, header, footer, div, ul, ol, li, h1, h2,
+	h3, h4, h5, h6, p, summary {
+	margin: 0;
+	padding: 0;
 }
-*{
-    box-sizing: border-box;
+
+* {
+	box-sizing: border-box;
 }
+
 *, *:before, *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-body{
-    padding:15px;
-    font-family: "Microsoft YaHei","宋体";
-    font-size: 14px;
-    color:#788288;
+
+body {
+	padding: 15px;
+	font-family: "Microsoft YaHei", "宋体";
+	font-size: 14px;
+	color: #788288;
 }
-ul,ol,li{
-    list-style:none;
+
+ul, ol, li {
+	list-style: none;
 }
-h1,h2,h3,h4,h5,h6{
-    color: #000;
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
 }
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: inherit;
 	font-weight: 500;
@@ -226,40 +233,74 @@ footer {
 	width: 16.66666667%;
 }
 /**
+* 浮动
+*/
+.fl-right {
+	float: right;
+}
+
+.fl-left {
+	float: left;
+}
+
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+/**
+*  效果
+*/
+.hide {
+	display: none;
+	visibility: hidden;
+}
+
+.show {
+	display: block;
+	visibility: visible;
+}
+/**
 *  背景
 */
 .bg-primary {
 	background-color: #594f8d;
-    color: #dbd8e9;
+	color: #dbd8e9;
 }
+
 .bg-success {
 	background-color: #92cf5c;
-    color: #fbfdfa;
+	color: #fbfdfa;
 }
 
 .bg-black {
-    background-color: #2c3039;
-    color: #9aa1b1;
+	background-color: #2c3039;
+	color: #9aa1b1;
 }
+
 .bg-dark {
-    background-color: #4c5566;
-    color: #c4c9d3;
+	background-color: #4c5566;
+	color: #c4c9d3;
 }
+
 .bg-light {
-    background-color: #ebeef5;
-    color: #717171;
+	background-color: #ebeef5;
+	color: #717171;
 }
+
 .bg-info {
-    background-color: #5dcff3;
-    color: #ffffff;
+	background-color: #5dcff3;
+	color: #ffffff;
 }
+
 .bg-warning {
-    background-color: #fcc44d;
-    color: #ffffff;
+	background-color: #fcc44d;
+	color: #ffffff;
 }
+
 .bg-danger {
-    background-color: #fb6b5b;
-    color: #ffffff;
+	background-color: #fb6b5b;
+	color: #ffffff;
 }
 /**
 *  圆角
@@ -267,12 +308,15 @@ footer {
 .rd-5 {
 	border-radius: 5px;
 }
+
 .rd-10 {
 	border-radius: 10px;
 }
+
 .rd-15 {
 	border-radius: 15px;
 }
+
 .rd-20 {
 	border-radius: 20px;
 }
@@ -291,7 +335,7 @@ footer {
 	text-align: center;
 }
 
-.line::AFTER {
+.line::after {
 	position: relative;
 	display: inline-block;
 	width: 10px;
@@ -301,6 +345,12 @@ footer {
 	border: #eee 1px solid;
 	top: -10px;
 	background-color: #fff;
+}
+
+.fa {
+	line-height: 1;
+	font-style: normal;
+	font-weight: normal;
 }
 /**
 *  ipad,ipad mini级以上的设备

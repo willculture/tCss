@@ -5,8 +5,9 @@
 */
 .label {
 	display: inline-block;
-	padding: .2em .6em .3em;
+	padding: 3px 7px;
 	background-color: #ebeef5;
 	color: #717171;
 	border-radius: .25em;
+	line-height: 1;
 }
