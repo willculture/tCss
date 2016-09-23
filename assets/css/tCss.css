@@ -12,6 +12,7 @@ body, section, article, aside, header, footer, div, ul, ol, li, h1, h2,
 
 * {
 	box-sizing: border-box;
+	word-break: break-all;
 }
 
 *, *:before, *:after {
