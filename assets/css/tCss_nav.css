@@ -34,3 +34,19 @@
     padding: 10px;
     font-size: 16px;
 }
+
+/**/
+.nav-side {
+	
+}
+.nav-side .nav-item {
+	float: none;
+}
+
+.nav-sub {
+	/* display: none; */
+	padding-left: 15px;
+}
+.nav-side .nav-item:hover > .nav-sub {
+	display: block;
+}
