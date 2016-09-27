@@ -353,6 +353,10 @@ footer {
 	font-style: normal;
 	font-weight: normal;
 }
+.w-1024 {
+	width: 1024px;
+	marin:0 auto;
+}
 /**
 *  ipad,ipad mini级以上的设备
 */
