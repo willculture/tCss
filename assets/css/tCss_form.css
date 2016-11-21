@@ -8,7 +8,7 @@ button {
 	border: none;
 }
 
-input[type=text] {
+input[type=text], input[type=password]{
 	color: #666666;
 	font-size: 14px;
 	padding: 6px 12px;
@@ -17,7 +17,7 @@ input[type=text] {
 	border-radius: 2px;
 }
 
-input[type=text]:disabled {
+input[type=text]:disabled, input[type=password]:disabled {
 	background: #ccc;
 	cursor: not-allowed;
 }
